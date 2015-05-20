@@ -1,0 +1,59 @@
+///- Write some code to allow a user to configure a building.
+  - Create a new flat
+  - Register a new tenant
+  - Add a tenant to a flat.
+- Don't worry about saving it to a file for now, that's too complex. 
+- Don't forget to check things; you shouldn't allow 100 people to move in to a 2 bedroom flat...
+
+- Sometimes flats aren't available to rent because they're being renovated. 
+  - They shouldn't have any occupants, but they're not vacant, and shouldn't 
+    let people move in.
+  - Update the management program so it can mark flats as undergoing renovation.
+  - And update the other areas of your program so people can't move in. 
+
+- Write some utility methods that help the landlord manage the entire building.
+  - Evict everyone in the building in one go. 
+  - List the names of all tenants. 
+  - Display the number of occupied & vacant flats. 
+  - Display the total rental income of the building. 
+
+- Allow the landlord to manage multiple buildings. 
+  - You'll need something to store your multiple buildings...
+    - Maybe an array? Maybe a hash? 
+  - And you'll need to let the user decide which building to work with. 
+    - And probably store that as 'current building' somewhere. 
+
+
+make flow/sudo code chart/plan 
+
+What do I want to create?
+
+Menu funtion which allows the user to input information and create new objects (new apartments, new clients) and also add/remove clients (tenants) to an apartment.
+
+Create Menu (see ruby calculator) giving the option to (1) Create a new Client file (2) Add a appt instruction (3) add tenant to appt
+
+Create a class for each "class". 
+        appt class
+
+
+How?  Create def menu
+          create "when" to link user choice in menu to correct class
+                capture user input (gets.chomp, to_i, number_input, text_input)
+                      create [] empty array to store user input
+                            store user inout in programme (locally, ie if the programme is quit then info is lost *use JSON if I have time*)
+
+
+              CLASS'S AND THEIR INSTANCE METHODS
+
+              CREATE NEW CLIENT - Client name, Client Age, Client gender
+
+              ADD NEW APPT - Appt name, bedrooms, bathrooms, sq ft
+
+              ADD TENANT TO FLAT - Move client array info into appt (<< like in the lesson)
+
+              ////////////////////////////////////////////////////////////////////////////
+
+
+
+
+

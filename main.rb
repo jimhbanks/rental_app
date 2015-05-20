@@ -12,7 +12,7 @@ end
     name = gets.chomp.downcase
     print "Client age?"
     name = gets.chomp.downcase
-    print "Client sex?"
+    print "Client gender?"
     name = gets.chomp.downcase
     
     Tenant.new name: [] , age: [] , sex: []  
@@ -29,10 +29,6 @@ end
   def register_new_apartment
     print "Price"
     price = gets.chomp.downcase
-    print "Is appt occupied?"
-    occupied = gets.chomp.downcase
-    print "Does appt have a balcony?"
-    balcony = gets.chomp.boolean
     print = "What is the Sq Foot?"
     sqft = gets.chomp.to_i
     print = "How many bedrooms in appt?"
@@ -41,7 +37,7 @@ end
     bathrooms = gets.chomp.to_i
     
 
-Apartment.new price: [], occupied: [], balcony: [], sqft: [], bedrooms: [], bathrooms: []
+Apartment.new price: [], sqft: [], bedrooms: [], bathrooms: []
 
 
   end
